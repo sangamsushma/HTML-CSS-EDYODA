@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.navbar li{
+    font-size: 25px;
+    padding-left: 50px;
+    cursor: pointer;
+}
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.mobile-nav-links{
+    display: none;
+}
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+.home{
+    background-image: linear-gradient(to right,violet, yellow 135%);
+}
+#home-img{
+    height: 750px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.home-information{
+    position: absolute;
+    background-color: rgb(231, 64, 92, 0.6);
+    top: 35%;
+    left: 10%;
+    width: 40%;
+    padding: 35px;
+}
+.home-information h1{
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+.home-information p{
+    font-size: 20px;
+    color: white;
+}
+.order{
+    padding-top: 125px;
+    text-align: center;
+}
+.order-heading{
+    color: white;
+    font-size: 50px;
+    padding-bottom: 100px;
+    letter-spacing: 10px;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+.cards{
+    height: 450px;
+    width: 350px;
+    background-color: white;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+}
+.cards img{
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    display: block;
+    border-top-right-radius: 70px;
+    padding-top: 20px;
+}
+#order-btn{
+    padding: 20px 70px 20px 70px;
+    border-radius: 35px;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 150px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 1150px) {
+    .cards-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 1050px) {
+    .nav-list {
+        display: none;
+    }
+
+    .icons{
+        float: right;    
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .mobile-nav-links {
+        display: block;
+        background-image: linear-gradient(to right,violet, yellow 135%);
+        color: black;
+        padding: 20px;
+    }
+
+    .mobile-nav-links ul {
+        list-style: none;
+    }
+
+    .mobile-nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .mobile-nav-links a {
+        color: white;
+        text-decoration: none;
+    }
+}
